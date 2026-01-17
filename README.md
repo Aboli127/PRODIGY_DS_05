@@ -1,102 +1,75 @@
-{
- "cells": [
-  {
-   "cell_type": "markdown",
-   "id": "1799c442-52ea-42c2-8d3b-7c7c47b4398a",
-   "metadata": {},
-   "source": [
-    "📊 Task: Traffic Accident Analysis & Visualization\n",
-    "🎯 Objective\n",
-    "\n",
-    "The objective of this project is to analyze traffic accident data to identify patterns related to **road conditions, weather, and time of day**, and to visualize **accident hotspots and contributing factors**. The goal is to uncover insights that can help in road safety planning and accident prevention.\n",
-    "\n",
-    "🏞️ Dataset\n",
-    "\n",
-    "    Dataset Used: US Accidents Dataset (March 2023)\n",
-    "    File: US_Accidents_March23.csv\n",
-    "    Description: The dataset contains information about traffic accidents in the US, including accident severity, time, location, weather conditions, visibility, and precipitation.\n",
-    "\n",
-    "🛠️ Tools & Technologies\n",
-    "\n",
-    "    Python\n",
-    "    Pandas & NumPy\n",
-    "    Matplotlib & Seaborn\n",
-    "    Folium / Geopandas (for geographic visualization)\n",
-    "\n",
-    "🧹 Data Preprocessing\n",
-    "\n",
-    "The following preprocessing steps were performed:\n",
-    "\n",
-    "    Checked and cleaned missing values\n",
-    "    Converted date/time columns into appropriate formats\n",
-    "    Prepared numerical and categorical features for analysis\n",
-    "    Extracted hour and day of week from timestamp for time-based analysis\n",
-    "    Selected relevant columns for visualization and analysis\n",
-    "\n",
-    "📊 Data Analysis & Visualization\n",
-    "\n",
-    "The project includes the following analysis and visualizations:\n",
-    "\n",
-    "    Distribution of Traffic Accidents by Hour\n",
-    "    Distribution of Accidents by Day of Week\n",
-    "    Top Weather Conditions During Accidents\n",
-    "    Visibility Distribution During Accidents\n",
-    "    Accident Severity Distribution\n",
-    "    Accident Hotspots (Geographical)\n",
-    "\n",
-    "(Optional enhancements: Severity vs Weather, Severity vs Visibility, Severity vs Precipitation)\n",
-    "\n",
-    "🔍 Key Insights\n",
-    "\n",
-    "    Accidents occur more frequently during **rush hours**.\n",
-    "    Weather conditions such as **rain, fog, and low visibility** significantly impact accident occurrence.\n",
-    "    Accident severity peaks under **poor visibility and extreme weather conditions**.\n",
-    "    Geographical hotspots highlight locations with higher accident frequency, which can inform traffic safety measures.\n",
-    "\n",
-    "✅ Conclusion 🏁\n",
-    "\n",
-    "This project demonstrates the application of **data analysis and visualization** techniques to real-world traffic accident data. It identifies patterns in time, weather, and location, providing actionable insights for improving road safety.\n",
-    "\n",
-    "📂 Dataset Note\n",
-    "\n",
-    "The original dataset (US_Accidents_March23.csv) is approximately 2.8 GB and cannot be uploaded to GitHub due to size limitations.\n",
-    "\n",
-    "For demonstration and analysis purposes, a random sample of 50,000 records\n",
-    "(US_Accidents_sample.csv) has been used in this repository.\n",
-    "\n",
-    "Original dataset source:\n",
-    "https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents\n",
-    "\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "b86d76ee-f233-482d-ae77-845248f4223d",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python [conda env:base] *",
-   "language": "python",
-   "name": "conda-base-py"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.13.9"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+# 📊 Task-05: Traffic Accident Analysis & Visualization
+
+## 🎯 Objective
+The objective of this project is to analyze traffic accident data to identify patterns related to **road conditions, weather, and time of day**, and to visualize **accident hotspots and contributing factors**.  
+The goal is to derive actionable insights that can help improve **road safety and accident prevention**.
+
+---
+
+## 📂 Dataset
+- **Dataset Name:** US Accidents Dataset (March 2023)
+- **Source:** Kaggle – US Accidents Dataset
+- **Original File:** US_Accidents_March23.csv
+- **Sample File Used in This Project:** US_Accidents_sample.csv
+
+---
+
+## 🚫 Why the Full CSV File Is NOT Uploaded to GitHub
+The original dataset file **US_Accidents_March23.csv** is approximately **2.8 GB** in size.
+
+GitHub does **not allow files larger than 100 MB** to be uploaded in a repository.  
+Therefore, the full dataset **cannot be included** in this GitHub project.
+
+👉 To solve this, a **random sample of 50,000 records**
+(`US_Accidents_sample.csv`) has been created and used for **all analysis and visualizations** in this repository.
+
+📥 Anyone who wants to work with the **complete dataset** can download it directly from the official source:
+🔗 https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents
+
+---
+
+## 🛠️ Tools & Technologies
+- Python
+- Pandas & NumPy
+- Matplotlib & Seaborn
+- Jupyter Notebook
+
+---
+
+## 🧹 Data Preprocessing
+The following preprocessing steps were performed:
+- Checked and handled missing values
+- Converted date-time columns into appropriate formats
+- Extracted **Hour** and **Day of Week** from timestamps
+- Selected relevant columns for analysis
+- Prepared data for visualization
+
+---
+
+## 📈 Data Analysis & Visualizations
+The project includes the following analyses and visualizations:
+
+- Distribution of Traffic Accidents by Hour  
+- Distribution of Accidents by Day of Week  
+- Top Weather Conditions During Accidents  
+- Visibility Distribution During Accidents  
+- Accident Severity Distribution  
+- Accident Hotspots (Geographical Analysis)
+
+---
+
+## 🔍 Key Insights
+- Accidents occur more frequently during **rush hours**
+- **Poor visibility** and adverse weather conditions significantly increase accident risk
+- Accident severity increases under **extreme weather conditions**
+- Certain geographical locations show higher accident concentration
+
+---
+
+## ✅ Conclusion
+This project demonstrates the application of **data analysis and visualization techniques** on real-world traffic accident data.  
+The insights derived can support **traffic safety planning and accident prevention strategies**.
+
+---
+
+## 📌 Repository Structure
